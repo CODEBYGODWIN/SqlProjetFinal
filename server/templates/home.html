@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Employés</title>
+    <link rel="stylesheet" type="text/css" href="/static/home.css">
+</head>
+<body>
+    <h1>Liste des Employés</h1>
+    <button id="show-employees">Afficher les Employés</button>
+    <a href="/add_employee"><button>ajouter un employé</button></a>
+    <table id="employee-table" style="display:none;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Adresse</th>
+                <th>Téléphone</th>
+                <th>Date d'embauche</th>
+                <th>Salaire</th>
+                <th>Département</th>
+                <th>Poste</th>
+            </tr>
+        </thead>
+        <tbody id="employee-list">
+        </tbody>
+    </table>
+    <script src="/js/home.js"></script>
+</body>
+</html>

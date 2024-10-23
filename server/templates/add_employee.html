@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Employé</title>
+    <link rel="stylesheet" type="text/css" href="/static/home.css">
+</head>
+<body>
+
+    <h1>Ajouter un Nouvel Employé</h1>
+    <form action="/createEmployee" method="POST">
+        <label for="first_name">Prénom:</label>
+        <input type="text" id="first_name" name="first_name" required>
+
+        <label for="last_name">Nom:</label>
+        <input type="text" id="last_name" name="last_name" required>
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" required>
+
+        <label for="address">Adresse:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">Téléphone:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="hire_date">Date d'embauche:</label>
+        <input type="date" id="hire_Date" name="hire_date" required>
+
+        <label for="salary">Salaire:</label>
+        <input type="text" id="salary" name="salary">
+
+        <label for="departement">Département:</label>
+        <select id="departement" name="department" required>
+            <option value="1">DIRECTION GENERALE</option>
+            <option value="2">COMPTABILITE</option>
+            <option value="3">MARKETING</option>
+            <option value="4">RECHERCHE ET DEVELOPPEMENT</option>
+            <option value="5">PRODUCTION/FABRICATION</option>
+            <option value="6">ACHATS / APPROVISIONNEMENT</option>
+            <option value="7">LOGISTIQUE</option>
+            <option value="8">VENTES</option>
+            <option value="9">CONTROLE DE QUALITE</option>
+            <option value="10">RESSOURCES HUMAINES</option>
+            <option value="11">SERVICE CLIENT</option>
+        </select>
+
+        <label for="post">Poste:</label>
+        <select id="post" name="post" required>
+            <option value="">Sélectionnez un poste</option>
+        </select>
+
+        <button type="submit">Ajouter l'Employé</button>
+    </form>
+    <script src="/js/add_employee.js"></script>
+</body>
+</html>

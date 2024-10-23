@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter un Employé</title>
-    <link rel="stylesheet" type="text/css" href="/static/home.css">
+    <link rel="stylesheet" type="text/css" href="/static/add_employee.css">
 </head>
 <body>
 
     <h1>Ajouter un Nouvel Employé</h1>
+    <a href="/home"><button class="btnHome">Home</button></a>
     <form action="/createEmployee" method="POST">
         <label for="first_name">Prénom:</label>
         <input type="text" id="first_name" name="first_name" required>
@@ -52,7 +53,7 @@
             <option value="">Sélectionnez un poste</option>
         </select>
 
-        <button type="submit">Ajouter l'Employé</button>
+        <button class="btnAddEmploe" type="submit">Ajouter l'Employé</button>
     </form>
     <script src="/js/add_employee.js"></script>
 </body>

@@ -2,6 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 50px;
 }
+
+.btnHome {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #939393;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btnHome:hover {
+    background-color: #676767;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -16,7 +31,7 @@ input, select {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-button {
+.btnAddEmploe {
     padding: 10px;
     background-color: #28a745;
     color: white;
@@ -24,6 +39,6 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-button:hover {
+.btnAddEmploe:hover {
     background-color: #218838;
 }

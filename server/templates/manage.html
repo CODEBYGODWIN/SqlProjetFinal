@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Employees</title>
+    <link rel="stylesheet" href="/static/manage.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GESTION DES EMPLOYEES</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="recherche...">
+            <select id="searchType">
+                <option value="name">par nom/prénom</option>
+                <option value="post">par poste</option>
+                <option value="department">par département</option>
+            </select>
+            <button id="searchBtn">GO</button>
+        </div>
+        <table id="employeesTable">
+            <thead>
+                <tr>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Mail</th>
+                    <th>Département</th>
+                    <th>Poste</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="employeeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="employeeForm">
+                <input type="hidden" id="employeeId">
+                <label for="firstName">Prénom(s):</label>
+                <input type="text" id="firstName" required>
+                <label for="lastName">Nom:</label>
+                <input type="text" id="lastName" required>
+                <label for="mail">Mail:</label>
+                <input type="email" id="mail" required>
+                <label for="address">Addresse:</label>
+                <input type="text" id="address" required>
+                <label for="phone">Téléphone:</label>
+                <input type="text" id="phone" required>
+                <label for="salary">Salaire:</label>
+                <input type="text" id="salary" required>
+                <button type="submit">Mettre à jour</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/manage.js"></script>
+</body>
+</html>

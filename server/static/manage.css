@@ -12,7 +12,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow-x: auto; /* Ajoute cette ligne pour permettre le défilement horizontal si nécessaire */
+    overflow-x: auto; 
 }
 
 h1 {
@@ -45,18 +45,18 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    table-layout: fixed; /* Ajoute cette ligne pour forcer la table à occuper l'espace disponible */
+    table-layout: fixed;
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
-    word-wrap: break-word; /* Ajoute cette ligne pour éviter que les textes trop longs débordent */
+    word-wrap: break-word;
 }
 
 td {
-    max-width: 150px; /* Limite la largeur des colonnes pour empêcher un débordement excessif */
+    max-width: 150px;
 }
 
 tr:nth-child(even) {

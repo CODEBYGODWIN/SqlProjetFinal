@@ -16,8 +16,8 @@ document.getElementById('searchBtn').addEventListener('click', function () {
                     <td>${employee.department}</td>
                     <td>${employee.post}</td>
                     <td>
-                        <button onclick="editEmployee(${employee.id})">modifier</button>
-                        <button onclick="deleteEmployee(${employee.id})">supprimer</button>
+                        <button class="update" onclick="editEmployee(${employee.id})">modifier</button>
+                        <button class="delete" onclick="deleteEmployee(${employee.id})">supprimer</button>
                     </td>
                 `;
                 tbody.appendChild(row);

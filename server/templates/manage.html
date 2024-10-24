@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="/static/manage.css">
 </head>
 <body>
-    <div class="container">
-        <h1>GESTION DES EMPLOYEES</h1>
+    <header class="head">
+        <img id="logo" src="../img/logo/logo parfait.png" alt="Logo">
+        <h1 class="title">Gestion</h1>
+        <div class="manage_button">
+            <a href="/"><button class="btng">accueil</button></a>
+            <a href="/add_employee"><button class="btng">ajouter un employé</button></a>
+            <a href="/manage_employee"><button class="btng">Gestion des employés</button></a>
+        </div>
         <div class="search-bar">
             <input type="text" id="searchInput" placeholder="recherche...">
             <select id="searchType">
@@ -18,6 +24,8 @@
             </select>
             <button id="searchBtn">GO</button>
         </div>
+    </header>
+    <div class="container">
         <table id="employeesTable">
             <thead>
                 <tr>
@@ -56,5 +64,6 @@
     </div>
 
     <script src="/js/manage.js"></script>
+    <script src="/js/home.js"></script>
 </body>
 </html>
